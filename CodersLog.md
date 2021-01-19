@@ -79,9 +79,9 @@ Using DOM and JavaScript is exacltly what I was looking for in learning how to m
 
 [Shopping List Maker](https://jameslusk.github.io/shopping-list.v1/)
 
-**Resources**:
-[w3schoools - JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)
-[JavaScript Char/key codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
+**Resources**:<br>
+[w3schoools - JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)<br>
+[JavaScript Char/key codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)<br>
 [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 ----------------------------------------------------------
