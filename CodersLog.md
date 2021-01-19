@@ -1,16 +1,17 @@
-<h1>Learning Log</h1><br>
+# Coder's Log
 
-<h2>Format</h2>
-<lb>
-<h3>DATE, 2021</h3>
-<lb>
-<strong>Today's Progress:</strong>
 
-<strong>Thoughts:</strong>
+# Format
 
-<strong>Link to work:</strong>
+## DATE, 2021
 
-<strong>Resources:</strong>
+**Today's Progress**:
 
-<lb>
+**Thoughts**: 
+
+**Link to work**:
+
+**Resources**
+
+----------------------------------------------------------
 
