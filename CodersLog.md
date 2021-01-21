@@ -87,7 +87,7 @@ Using DOM and JavaScript is exacltly what I was looking for in learning how to m
 
 ----------------------------------------------------------
 
-## LOG: 002
+## LOG: #002
 
 ## Jan 20th, 2021 
 
@@ -114,11 +114,11 @@ Today was a mental struggle for sure. I searched and attempted different combona
 
 I ened up reaching out to some people in the Zero to Mastery Discord as a desparate plea for help. Someone answered, looked at my code, and gave some pointers. I now need to get back on tomorrow and (try to )apply what they said.
 
-**Link to work**:
+**Link to work**:<br>
 
 [Shopping List Maker](https://jameslusk.github.io/shopping-list.v1/)
 
-**Resources**:
+**Resources**:<br>
 [checkbox solution #1](https://stackoverflow.com/questions/56837740/how-to-add-remove-class-from-a-parent-list-itemli-when-their-child-checkbox-is)<br>
 [checkbox solution #2](https://stackoverflow.com/questions/40245046/js-how-to-select-and-line-through-the-items-in-html-list-by-pressing-on-a-butt)<br>
 [checkbox solution #3](https://github.com/drood87/shoppingList/blob/master/script.js)<br>
@@ -128,7 +128,7 @@ I ened up reaching out to some people in the Zero to Mastery Discord as a despar
 
 ## LOG: #003
 
-## DATE, 2021 
+## Jan 21, 2021 
 
 **Today's Progress**:
 
@@ -318,6 +318,8 @@ function moveCommand(direction) {
 }
 
 **Thoughts**: 
+
+Wow, today was alot. Felt great to take a big step forward with my Shopping List checkbox issue. Started to dive into Advanced JavaScript. The rabbit hole is deep.
 
 **Link to work**:<br>
 https://jameslusk.github.io/background-generator/
