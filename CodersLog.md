@@ -125,3 +125,209 @@ I ened up reaching out to some people in the Zero to Mastery Discord as a despar
 [checkbox solution #4](https://github.com/NickPax/shopping-list/blob/master/script.js)
 
 ----------------------------------------------------------
+
+## LOG: #003
+
+## DATE, 2021 
+
+**Today's Progress**:
+
+Solved the damned checkbox/line-through issue with my shopping list maker. Sort of; with the following code;
+
+function strikeThrough(event) {
+    var parent = document.getElementById("c1").parentElement;
+    parent.classList.toggle("done");
+}
+
+It performs the strike-through of list item, but only first item on the list. Good enough for now. Moving on in lesson. Notes from fellow ZTM student below helped me out.
+
+## Notes From Joao (ZTM Disscord)
+
+Ok well there are a couple of ways. Based on  what you are doing right now, I would modify the li element's CSS style. To do that you can create addEventListener that will trigger when clicked on a checkbox, target it's parent element (given that your input is inside the li) and update the classList. You should of course create that class in your CSS which would simply apply the text-decoration property.
+To target the element of a parent you can use parentElement (is not a function)
+I think with this is enough to get started, I think you already are familiar with all of these?
+A final hint: do not add the event listener for each individual checkbox. Create one for the entire list and check inside the function which element was clicked on.
+
+## Today's lesson
+
+Made a gradient background generator and learned syntax in both css and javascript to do so.
+
+### CSS Linear Gradients
+To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+
+Styntax:
+
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+
+### <input type="color">
+
+<input> elements of type color provide a user interface element that lets a user specify a color, either by using a visual color picker interface or by entering the color into a text field in #rrggbb hexadecimal format. Only simple colors (without alpha channel) are allowed though CSS colors has more formats, e.g. color names, functional notations and a hexadecimal format with an alpha channel.
+
+The element's presentation may vary substantially from one browser and/or platform to another—it might be a simple textual input that automatically validates to ensure that the color information is entered in the proper format, or a platform-standard color picker, or some kind of custom color picker window.
+
+### HTML
+
+<p>Choose your monster's colors:</p>
+
+<div>
+    <input type="color" id="head" name="head"
+           value="#e66465">
+    <label for="head">Head</label>
+</div>
+
+<div>
+    <input type="color" id="body" name="body"
+            value="#f6b73c">
+    <label for="body">Body</label>
+</div>
+
+### CSS 
+
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+### HTML DOM textContent Property
+
+Definition and Usage
+The textContent property sets or returns the text content of the specified node, and all its descendants.
+
+If you set the textContent property, any child nodes are removed and replaced by a single Text node containing the specified string.
+
+Note: This property is similar to the innerText property, however there are some differences:
+
+textContent returns the text content of all elements, while innerText returns the content of all elements, except for <script> and <style> elements.
+innerText will not return the text of elements that are hidden with CSS (textContent will). 
+Tip: Sometimes this property can be used instead of the nodeValue property, but remember that this property returns the text of all child nodes as well.
+
+Tip: To set or return the HTML content of an element, use the innerHTML property.
+
+### ZTM Lesson #141. Scope:
+
+// Scope
+
+// Root Scope (window)
+var fun = 5;
+
+function funFUnction() {
+    // Child Scope
+    var fun = "hellooo";
+    console.log(fun);
+}
+
+### JavaScript Function Scope
+In JavaScript there are two types of scope:
+
+Local scope
+Global scope
+JavaScript has function scope: Each function creates a new scope.
+
+Scope determines the accessibility (visibility) of these variables.
+
+Variables defined inside a function are not accessible (visible) from outside the function.
+
+#### Local JavaScript Variables
+Variables declared within a JavaScript function, become LOCAL to the function.
+
+Local variables have Function scope: They can only be accessed from within the function.
+
+// code here can NOT use carName
+
+function myFunction() {
+  var carName = "Volvo";
+
+  // code here CAN use carName
+
+}
+
+#### Global JavaScript Variables
+A variable declared outside a function, becomes GLOBAL.
+
+A global variable has global scope: All scripts and functions on a web page can access it. 
+
+var carName = "Volvo";
+
+// code here can use carName
+
+function myFunction() {
+
+  // code here can also use carName
+
+}
+
+#### Conditional (Ternary) Operator
+JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
+
+Syntax:
+variablename = (condition) ? value1:value2 
+
+Example:
+var voteable = (age < 18) ? "Too young":"Old enough";
+
+#### The JavaScript Switch Statement
+Use the switch statement to select one of many code blocks to be executed.
+
+Syntax:
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+This is how it works:
+
+The switch expression is evaluated once.
+The value of the expression is compared with the values of each case.
+If there is a match, the associated block of code is executed.
+If there is no match, the default code block is executed.
+
+Example #2:
+
+//Using this function, answer the questions below:
+function moveCommand(direction) {
+    var whatHappens;
+    switch (direction) {
+        case "forward":
+            break;
+            whatHappens = "you encounter a monster";
+        case "back":
+            whatHappens = "you arrived home";
+            break;
+            break;
+        case "right":
+            return whatHappens = "you found a river";
+            break;
+        case "left":
+            break;
+            whatHappens = "you run into a troll";
+            break;
+        default:
+            whatHappens = "please enter a valid direction";
+    }
+    return whatHappens;
+}
+
+**Thoughts**: 
+
+**Link to work**:<br>
+https://jameslusk.github.io/background-generator/
+
+**Resources**: <br>
+[CSS Linear Gradients](https://www.w3schools.com/css/css3_gradients.asp)<br>
+[<input type="color">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)<br>
+[HTML DOM textContent Property](https://www.w3schools.com/jsref/prop_node_textcontent.asp)<br>
+[JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)<br>
+[Conditional (Ternary) Operator](https://www.w3schools.com/js/js_comparisons.asp)<br>
+[The JavaScript Switch Statement](https://www.w3schools.com/js/js_switch.asp)<br>
+
+----------------------------------------------------------
