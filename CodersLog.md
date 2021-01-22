@@ -17,112 +17,238 @@
 
 ----------------------------------------------------------
 
-## LOG: #001
+## LOG: #004
 
-## Jan 19th, 2021
+## Jan 22nd, 2021 
 
 **Today's Progress**:
-4.4hrs
 
-I started my moring off by uploading a JavaScript Tester program I wrote yesterday and then created a README bio in GitHub for my profile. I then created and formatted this log as a way to journal and track my progress. I wish I had started it sooner.
+## Notes:
 
-Zero to Mastery (ZTM) Course: Learning about Document Object Model (DOM): When a web page is loaded, the browser creates a Document Object Model of the page.
+# JavaScript ES5 & ES6: let and const
 
-The DOM is a W3C (World Wide Web Consortium) standard. The DOM defines a standard for accessing documents:
-"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+## let
 
-<h2>Learned about</h2> 
+### i.e. Redeclaring Variables
+#1;
 
-DOM Selectors
---------------
-getElementsByTagName
-getElementsByClassName
-getElementById
+    var x = 10;
+    // Here x is 10
+    {
+    var x = 2;
+    // Here x is 2
+    }
+    // Here x is 2
 
-querySelector
-querySelectorAll
+#2;
 
-getAttribute
-setAttribute
+    var x = 10;
+    // Here x is 10
+    {
+    let x = 2;
+    // Here x is 2
+    }
+    // Here x is 10
 
-##Changing Styles
-style.{property} //ok
+### i.e. Loop Scope
+#1;
 
-className //best
-classList //best
+    var i = 5;
+    for (var i = 0; i < 10; i++) {
+    // some statements
+    }
+    // Here i is 10
 
-classList.add
-classList.remove
-classList.toggle
+#2;
 
-##Bonus
-innerHTML //DANGEROUS
+    let i = 5;
+    for (let i = 0; i < 10; i++) {
+    // some statements
+    }
+    // Here i is 5
 
-parentElement
-children
+## const
 
-##It is important to CACHE selectors in variables
+Variables defined with const behave like let variables, except they cannot be reassigned:
 
-##CODE: How to make parent elements contorl ( > * )
-#parent > * {
-    display: block;
-    margin: 30px 0;
-}
+    const PI = 3.141592653589793;
+    PI = 3.14;      // This will give an error
+    PI = PI + 10;   // This will also give an error
 
-##CODE: how to force first letter to uppercase
-textBox.value = textBox.value.charAt(0).toUpperCase() + textBox.value.slice(1).toLowerCase();
+### i.e. Declaring
 
-Made a simple shopping list maker with DOM and JavaSript.
+Redeclaring or reassigning an existing const variable, in the same scope, or in the same block, is not allowed:
+
+    const x = 2;       // Allowed
+    const x = 3;       // Not allowed
+    x = 3;             // Not allowed
+    var x = 3;         // Not allowed
+    let x = 3;         // Not allowed
+
+    {
+    const x = 2;   // Allowed
+    const x = 3;   // Not allowed
+    x = 3;         // Not allowed
+    var x = 3;     // Not allowed
+
+    ### Destructuring
+
+// if we had an object below and wanted to access each item...
+    const obj = {
+        player: 'bobby',
+        exp: 100,
+        wizardLevel = false
+    }
+
+// we would have to do the following...
+    const player = obj.player;
+    const exp = obj.exp;
+    let wizardLevel = obj.wizardLevel;
+
+// with destructuring you can do this...
+
+    const { player, exp } = obj;
+
+    let { wizardLevel } = obj;
+
+// this makes the above const and let available to use elsewhere in your code.
+
+### Object Properties
+
+    const name = 'john snow';
+
+    const obj = {
+        [name]: 'hello',
+        ['ray' + 'smith']: 'sup'
+    }
+
+// Appears in console like the following...
+    >obj
+    {john snow: "hello", raysmith: "sup"}
+
+    // Another i.e.
+    const a = "Simon";
+    const b = true;
+    const c = {};
+
+    const obj = { a, b, c }
+
+// Appears in console like the following...
+
+    >obj
+    {a: "Simon", b: true, c: {…}}
+
+### New String Syntax
+
+    const name = "Sally";
+    const age = 34;
+    const pet = "horse";
+
+    const greeting = `Hello ${name} you seem to be ${age-10}, what a majestic ${pet} you have!`;
+
+// Console.log
+
+    > greeting
+    <- "Hello Sally you seem to be 24, what a majestic horse you have!"
+
+### Default Arguments
+
+// i.e.
+    function greet(name='', age=30, pet='cat') {
+        return `Hello ${name} you seem to be ${age-10}, what a majestic ${pet} you have!`;
+    }
+
+// Console.log
+
+    > greet()
+    <- "Hello  you seem to be 20, what a majestic cat you have!"
+
+// i.e. #2 Console.log
+
+    > greet("john", 50, "monkey");
+    <- "Hello john you seem to be 40, what a majestic monkey you have!"
+
+### Symbol
+
+    let sym1 = Symbol();
+    let sym2 = Symbol('foo');
+    let sym3 = Symbol('foo');
+
+// Console.log
+
+    > sym1
+    <- Symbol()
+    > sym2
+    <- Symbol(foo)
+    > sym3
+    <- Symbol(foo)
+    > sym2 === sym3
+    <- false
+
+### Arrow Functions
+
+// old way...
+
+    function add(a, b) {
+        return a + b;
+    }
+
+// arrow function way...
+
+    const add = (a, b) => a + b;
+
+// OR...
+
+    const add = (a, b) => {
+        return a + b;
+    }
+
+// Console.log
+
+    > add(27, 34);
+    <- 61
+    
+### Closures
+
+// Function Alerts Hi in broswer
+
+    const first = () => {
+        const greet = 'HI';
+        const second = () => {
+            const name = "bobby";
+            alert(greet);
+        }
+        return second;
+    }
+
+    const newFunc = first();
+    newFunc();
+
+### Currying
+
+    > const multiply = (a, b) => a * b;
+    > const curriedMultiply = (a) => (b) => a * b;
+    > curriedMultiply(3)(4);
+    <- 12
+
+### Compose 
+
+    > const compose = (f, g) => (a) => f(g(a));
+
+    > const sum = (num) => num + 1;
+
+    > compose(sum, sum)(5);
+
+    <- 7
+
 **Thoughts**: 
-Using DOM and JavaScript is exacltly what I was looking for in learning how to mimic making a To-Do list program with Flask. There are a lot of possibilites with JavaScript and DOM manipulation. I'm eager to get more involved. I have some ideas for projects using this system.
 
-**Link to work**:
+**Link to work**: <br>
 
-[Shopping List Maker](https://jameslusk.github.io/shopping-list.v1/)
+**Resources**: <br>
+[JavaScript Let](https://www.w3schools.com/js/js_let.asp)<br>
+[JavaScript Const](https://www.w3schools.com/js/js_const.asp)<br>
 
-**Resources**:<br>
-[w3schoools - JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)<br>
-[JavaScript Char/key codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)<br>
-[Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
-
-----------------------------------------------------------
-
-## LOG: #002
-
-## Jan 20th, 2021 
-
-**Today's Progress**: 5.2hrs
-
-Made some progress with a Shopping List maker that I'm working on. It could really double as a To Do list. I have to where user can enter a item in the form field, press enter, and then the item gets added to the list with a checkbox and a delete button. I worked on coding the program to line-through the text when the checkbox is clicked. I spent most of my time today searching and trying different methods to no avail.
-
-I was able to add the checkbox element with the following code;
-
-<!-- // Add checkbox element to list -->
-    checkBox = cb = document.createElement( "input" );
-    cb.type = "checkbox";
-    cb.id = "c1";
-    cb.value = name;
-    cb.checked = false;
-<!-- //Append the checkbox to the li -->
-    li.appendChild(cb);
-
-As information, I am writing this program with logic in JavaScript.
-
-**Thoughts**: 
-
-Today was a mental struggle for sure. I searched and attempted different combonations of syntax to make the damn thing line-through list text when the checkbox is clicked. It's crazy that when you get so involved with a problem time seems to fly by. It didn't feel like I had been working on this issue for roughly 5 hours. Nonetheless, I do enjoy it. I enjoy the obsticles and the extraordinary feeling you get once you solve a problem.
-
-I ened up reaching out to some people in the Zero to Mastery Discord as a desparate plea for help. Someone answered, looked at my code, and gave some pointers. I now need to get back on tomorrow and (try to )apply what they said.
-
-**Link to work**:<br>
-
-[Shopping List Maker](https://jameslusk.github.io/shopping-list.v1/)
-
-**Resources**:<br>
-[checkbox solution #1](https://stackoverflow.com/questions/56837740/how-to-add-remove-class-from-a-parent-list-itemli-when-their-child-checkbox-is)<br>
-[checkbox solution #2](https://stackoverflow.com/questions/40245046/js-how-to-select-and-line-through-the-items-in-html-list-by-pressing-on-a-butt)<br>
-[checkbox solution #3](https://github.com/drood87/shoppingList/blob/master/script.js)<br>
-[checkbox solution #4](https://github.com/NickPax/shopping-list/blob/master/script.js)
 
 ----------------------------------------------------------
 
@@ -333,206 +459,111 @@ https://jameslusk.github.io/background-generator/
 [The JavaScript Switch Statement](https://www.w3schools.com/js/js_switch.asp)<br>
 
 ----------------------------------------------------------
+## LOG: #002
 
-## LOG: #004
+## Jan 20th, 2021 
 
-## Jan 22nd, 2021 
+**Today's Progress**: 5.2hrs
 
-**Today's Progress**:
+Made some progress with a Shopping List maker that I'm working on. It could really double as a To Do list. I have to where user can enter a item in the form field, press enter, and then the item gets added to the list with a checkbox and a delete button. I worked on coding the program to line-through the text when the checkbox is clicked. I spent most of my time today searching and trying different methods to no avail.
 
-## Notes:
+I was able to add the checkbox element with the following code;
 
-# JavaScript ES5 & ES6: let and const
+<!-- // Add checkbox element to list -->
+    checkBox = cb = document.createElement( "input" );
+    cb.type = "checkbox";
+    cb.id = "c1";
+    cb.value = name;
+    cb.checked = false;
+<!-- //Append the checkbox to the li -->
+    li.appendChild(cb);
 
-## let
-
-### i.e. Redeclaring Variables
-#1;
-
-    var x = 10;
-    // Here x is 10
-    {
-    var x = 2;
-    // Here x is 2
-    }
-    // Here x is 2
-
-#2;
-
-    var x = 10;
-    // Here x is 10
-    {
-    let x = 2;
-    // Here x is 2
-    }
-    // Here x is 10
-
-### i.e. Loop Scope
-#1;
-
-    var i = 5;
-    for (var i = 0; i < 10; i++) {
-    // some statements
-    }
-    // Here i is 10
-
-#2;
-
-    let i = 5;
-    for (let i = 0; i < 10; i++) {
-    // some statements
-    }
-    // Here i is 5
-
-## const
-
-Variables defined with const behave like let variables, except they cannot be reassigned:
-
-    const PI = 3.141592653589793;
-    PI = 3.14;      // This will give an error
-    PI = PI + 10;   // This will also give an error
-
-### i.e. Declaring
-
-Redeclaring or reassigning an existing const variable, in the same scope, or in the same block, is not allowed:
-
-    const x = 2;       // Allowed
-    const x = 3;       // Not allowed
-    x = 3;             // Not allowed
-    var x = 3;         // Not allowed
-    let x = 3;         // Not allowed
-
-    {
-    const x = 2;   // Allowed
-    const x = 3;   // Not allowed
-    x = 3;         // Not allowed
-    var x = 3;     // Not allowed
-
-    ### Destructuring
-
-// if we had an object below and wanted to access each item...
-    const obj = {
-        player: 'bobby',
-        exp: 100,
-        wizardLevel = false
-    }
-
-// we would have to do the following...
-    const player = obj.player;
-    const exp = obj.exp;
-    let wizardLevel = obj.wizardLevel;
-
-// with destructuring you can do this...
-
-    const { player, exp } = obj;
-
-    let { wizardLevel } = obj;
-
-// this makes the above const and let available to use elsewhere in your code.
-
-### Object Properties
-
-    const name = 'john snow';
-
-    const obj = {
-        [name]: 'hello',
-        ['ray' + 'smith']: 'sup'
-    }
-
-// Appears in console like the following...
-    >obj
-    {john snow: "hello", raysmith: "sup"}
-
-    // Another i.e.
-    const a = "Simon";
-    const b = true;
-    const c = {};
-
-    const obj = { a, b, c }
-
-// Appears in console like the following...
-
-    >obj
-    {a: "Simon", b: true, c: {…}}
-
-### New String Syntax
-
-    const name = "Sally";
-    const age = 34;
-    const pet = "horse";
-
-    const greeting = `Hello ${name} you seem to be ${age-10}, what a majestic ${pet} you have!`;
-
-// Console.log
-
-    > greeting
-    <- "Hello Sally you seem to be 24, what a majestic horse you have!"
-
-### Default Arguments
-
-// i.e.
-    function greet(name='', age=30, pet='cat') {
-        return `Hello ${name} you seem to be ${age-10}, what a majestic ${pet} you have!`;
-    }
-
-// Console.log
-
-    > greet()
-    <- "Hello  you seem to be 20, what a majestic cat you have!"
-
-// i.e. #2 Console.log
-
-    > greet("john", 50, "monkey");
-    <- "Hello john you seem to be 40, what a majestic monkey you have!"
-
-### Symbol
-
-    let sym1 = Symbol();
-    let sym2 = Symbol('foo');
-    let sym3 = Symbol('foo');
-
-// Console.log
-
-    > sym1
-    <- Symbol()
-    > sym2
-    <- Symbol(foo)
-    > sym3
-    <- Symbol(foo)
-    > sym2 === sym3
-    <- false
-
-### Arrow Functions
-
-// old way...
-
-    function add(a, b) {
-        return a + b;
-    }
-
-// arrow function way...
-
-    const add = (a, b) => a + b;
-
-// OR...
-
-    const add = (a, b) => {
-        return a + b;
-    }
-
-// Console.log
-
-    > add(27, 34);
-    <- 61
-    
+As information, I am writing this program with logic in JavaScript.
 
 **Thoughts**: 
 
-**Link to work**: <br>
+Today was a mental struggle for sure. I searched and attempted different combonations of syntax to make the damn thing line-through list text when the checkbox is clicked. It's crazy that when you get so involved with a problem time seems to fly by. It didn't feel like I had been working on this issue for roughly 5 hours. Nonetheless, I do enjoy it. I enjoy the obsticles and the extraordinary feeling you get once you solve a problem.
 
-**Resources**: <br>
-[JavaScript Let](https://www.w3schools.com/js/js_let.asp)<br>
-[JavaScript Const](https://www.w3schools.com/js/js_const.asp)<br>
+I ened up reaching out to some people in the Zero to Mastery Discord as a desparate plea for help. Someone answered, looked at my code, and gave some pointers. I now need to get back on tomorrow and (try to )apply what they said.
 
+**Link to work**:<br>
+
+[Shopping List Maker](https://jameslusk.github.io/shopping-list.v1/)
+
+**Resources**:<br>
+[checkbox solution #1](https://stackoverflow.com/questions/56837740/how-to-add-remove-class-from-a-parent-list-itemli-when-their-child-checkbox-is)<br>
+[checkbox solution #2](https://stackoverflow.com/questions/40245046/js-how-to-select-and-line-through-the-items-in-html-list-by-pressing-on-a-butt)<br>
+[checkbox solution #3](https://github.com/drood87/shoppingList/blob/master/script.js)<br>
+[checkbox solution #4](https://github.com/NickPax/shopping-list/blob/master/script.js)
+
+----------------------------------------------------------
+
+## LOG: #001
+
+## Jan 19th, 2021
+
+**Today's Progress**:
+4.4hrs
+
+I started my moring off by uploading a JavaScript Tester program I wrote yesterday and then created a README bio in GitHub for my profile. I then created and formatted this log as a way to journal and track my progress. I wish I had started it sooner.
+
+Zero to Mastery (ZTM) Course: Learning about Document Object Model (DOM): When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The DOM is a W3C (World Wide Web Consortium) standard. The DOM defines a standard for accessing documents:
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+<h2>Learned about</h2> 
+
+DOM Selectors
+--------------
+getElementsByTagName
+getElementsByClassName
+getElementById
+
+querySelector
+querySelectorAll
+
+getAttribute
+setAttribute
+
+##Changing Styles
+style.{property} //ok
+
+className //best
+classList //best
+
+classList.add
+classList.remove
+classList.toggle
+
+##Bonus
+innerHTML //DANGEROUS
+
+parentElement
+children
+
+##It is important to CACHE selectors in variables
+
+##CODE: How to make parent elements contorl ( > * )
+#parent > * {
+    display: block;
+    margin: 30px 0;
+}
+
+##CODE: how to force first letter to uppercase
+textBox.value = textBox.value.charAt(0).toUpperCase() + textBox.value.slice(1).toLowerCase();
+
+Made a simple shopping list maker with DOM and JavaSript.
+**Thoughts**: 
+Using DOM and JavaScript is exacltly what I was looking for in learning how to mimic making a To-Do list program with Flask. There are a lot of possibilites with JavaScript and DOM manipulation. I'm eager to get more involved. I have some ideas for projects using this system.
+
+**Link to work**:
+
+[Shopping List Maker](https://jameslusk.github.io/shopping-list.v1/)
+
+**Resources**:<br>
+[w3schoools - JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)<br>
+[JavaScript Char/key codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)<br>
+[Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 ----------------------------------------------------------
