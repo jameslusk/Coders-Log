@@ -411,119 +411,119 @@ Redeclaring or reassigning an existing const variable, in the same scope, or in 
     ### Destructuring
 
 // if we had an object below and wanted to access each item...
-const obj = {
-    player: 'bobby',
-    exp: 100,
-    wizardLevel = false
-}
+    const obj = {
+        player: 'bobby',
+        exp: 100,
+        wizardLevel = false
+    }
 
 // we would have to do the following...
-const player = obj.player;
-const exp = obj.exp;
-let wizardLevel = obj.wizardLevel;
+    const player = obj.player;
+    const exp = obj.exp;
+    let wizardLevel = obj.wizardLevel;
 
 // with destructuring you can do this...
 
-const { player, exp } = obj;
+    const { player, exp } = obj;
 
-let { wizardLevel } = obj;
+    let { wizardLevel } = obj;
 
 // this makes the above const and let available to use elsewhere in your code.
 
 ### Object Properties
 
-const name = 'john snow';
+    const name = 'john snow';
 
-const obj = {
-    [name]: 'hello',
-    ['ray' + 'smith']: 'sup'
-}
-
-// Appears in console like the following...
->obj
-{john snow: "hello", raysmith: "sup"}
-
-// Another i.e.
-const a = "Simon";
-const b = true;
-const c = {};
-
-const obj = { a, b, c }
+    const obj = {
+        [name]: 'hello',
+        ['ray' + 'smith']: 'sup'
+    }
 
 // Appears in console like the following...
+    >obj
+    {john snow: "hello", raysmith: "sup"}
 
->obj
-{a: "Simon", b: true, c: {…}}
+    // Another i.e.
+    const a = "Simon";
+    const b = true;
+    const c = {};
+
+    const obj = { a, b, c }
+
+// Appears in console like the following...
+
+    >obj
+    {a: "Simon", b: true, c: {…}}
 
 ### New String Syntax
 
-const name = "Sally";
-const age = 34;
-const pet = "horse";
+    const name = "Sally";
+    const age = 34;
+    const pet = "horse";
 
-const greeting = `Hello ${name} you seem to be ${age-10}, what a majestic ${pet} you have!`;
+    const greeting = `Hello ${name} you seem to be ${age-10}, what a majestic ${pet} you have!`;
 
 // Console.log
 
-> greeting
-<- "Hello Sally you seem to be 24, what a majestic horse you have!"
+    > greeting
+    <- "Hello Sally you seem to be 24, what a majestic horse you have!"
 
 ### Default Arguments
 
 // i.e.
-function greet(name='', age=30, pet='cat') {
-    return `Hello ${name} you seem to be ${age-10}, what a majestic ${pet} you have!`;
-}
+    function greet(name='', age=30, pet='cat') {
+        return `Hello ${name} you seem to be ${age-10}, what a majestic ${pet} you have!`;
+    }
 
 // Console.log
 
-> greet()
-<- "Hello  you seem to be 20, what a majestic cat you have!"
+    > greet()
+    <- "Hello  you seem to be 20, what a majestic cat you have!"
 
 // i.e. #2 Console.log
 
-> greet("john", 50, "monkey");
-<- "Hello john you seem to be 40, what a majestic monkey you have!"
+    > greet("john", 50, "monkey");
+    <- "Hello john you seem to be 40, what a majestic monkey you have!"
 
 ### Symbol
 
-let sym1 = Symbol();
-let sym2 = Symbol('foo');
-let sym3 = Symbol('foo');
+    let sym1 = Symbol();
+    let sym2 = Symbol('foo');
+    let sym3 = Symbol('foo');
 
 // Console.log
 
-> sym1
-<- Symbol()
-> sym2
-<- Symbol(foo)
-> sym3
-<- Symbol(foo)
-> sym2 === sym3
-<- false
+    > sym1
+    <- Symbol()
+    > sym2
+    <- Symbol(foo)
+    > sym3
+    <- Symbol(foo)
+    > sym2 === sym3
+    <- false
 
 ### Arrow Functions
 
 // old way...
 
-function add(a, b) {
-    return a + b;
-}
+    function add(a, b) {
+        return a + b;
+    }
 
 // arrow function way...
 
-const add = (a, b) => a + b;
+    const add = (a, b) => a + b;
 
 // OR...
 
-const add = (a, b) => {
-    return a + b;
-}
+    const add = (a, b) => {
+        return a + b;
+    }
 
 // Console.log
 
-> add(27, 34);
-<- 61
+    > add(27, 34);
+    <- 61
     
 
 **Thoughts**: 
