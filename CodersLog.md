@@ -241,9 +241,63 @@ Redeclaring or reassigning an existing const variable, in the same scope, or in 
 
     <- 7
 
+### Arrays
+
+// Advanced arrays
+    var thisArray = [1, 2, 10, 16];
+
+    const double = []
+    const newArray = thisArray.forEach((num) => {
+        double.push(num * 2);
+    })
+
+    console.log(double);
+
+    <- (4) [2, 4, 20, 32]
+    
+
+### Map, Filter, Reduce 
+
+// map
+
+    const mapArray = thisArray.map(num => num * 2);
+
+    console.log(mapArray);
+
+    <- (4) [2, 4, 20, 32]
+
+// filter
+
+    const filterArray = thisArray.filter(num => num > 5);
+
+    console.log(filterArray);
+
+    <- (2) [10, 16]
+
+// reduce
+
+    const reduceArray = thisArray.reduce((accumulator, num) => {
+        return accumulator + num;
+    }, 0);
+
+    console.log('reduce', reduceArray);
+
+    <- reduce 29
+
+    const reduceArray = thisArray.reduce((accumulator, num) => {
+        return accumulator + num;
+    }, 5);
+
+    console.log('reduce', reduceArray);
+
+    <- reduce 34
+
 **Thoughts**: 
 
+Another day of deep learning in Advanced JavaScript. A bit overwhelming, a lot to take in. Need to get practicing with these principles and syntax to really hammer them in.
+
 **Link to work**: <br>
+No linked work today
 
 **Resources**: <br>
 [JavaScript Let](https://www.w3schools.com/js/js_let.asp)<br>
