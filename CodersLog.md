@@ -145,15 +145,67 @@ Invoking this in the global space will return the entire window object. This is 
 
     <- 4
 
+#### Es8 
+
+// String padding
+
+    Turtle.padStart(10);
+
+    <- "          Turtle"
+
+    Turtle.padEnd(10);
+
+    <- "Turrle          "
+
+// Trailing comma ',' -> Makes syntacially cleaner
+
+    const fun = (a,b,c,d,) => {
+        console.log(a);
+    }
+
+    fun(1,2,3,4,);
+
+    <- 1
+
+// Objects
+
+    let obj = {
+        username0: 'Santa',
+        username1: 'Rudolph',
+        username2: 'Grinch',
+    }
+
+    Object.values(obj).forEach(value => {
+        console.log(value);
+    })
+
+    Object.entries(obj).forEach(value => {
+        console.log(value);
+    })
+
+    Object.entries(obj).map(value => {
+        return value[1] + value[0].replace('username', '');
+    })
+
+    <- (3) ["Santa0", "Rudolph1", "Grinch2"]
+
+#### VS Code Setup
+
+I watched a video from freeCodeCamp about VS Code setup and settings. Learned about emmet setup and found a cheat sheet for it.
+
 # Thoughts: 
 
+More advanced data structures in JavaScript. It makes me want to go back to my cs50 course and rewrite those PSETs in JavaScript for practice. So much to take in, to be honest. I can tell I am just getting small tastes of things I will have to eventually take big bites out of.
+
 # Link to work: <br>
+No links today.
 
 # Resources: <br>
 [JS Comparison Table](https://dorey.github.io/JavaScript-Equality-Table/)<br>
 [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)<br>
 [The Abstract Equality Comparison Algorithm](https://262.ecma-international.org/5.1/#sec-11.9.3)<br>
 **Useful Tool** [JavaScript Object Explorer](https://sdras.github.io/object-explorer/)<br>
+[Emmet Cheet Sheet](https://docs.emmet.io/cheat-sheet/)
 
 
 ----------------------------------------------------------
