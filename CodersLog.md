@@ -26,11 +26,11 @@
 **Notes:**
 
 #### Advanced Objects:
-> Scope
+**Scope**
 In the most simplified of terms, scope has two levels: global scope and local scope. Global scope refers to variables that are accessible anywhere because they are declared outside of any individual functions or methods — usually at the top of the file. They exist in the global space, ready to be called upon at any time. The first example below concerns global scope.
 ![Picture(https://miro.medium.com/max/700/1*7mxyY1uQDid48yH1yJ0QtA.png)]
 
-> Context
+**Context**
 Context in JavaScript is another subject of confusion. It refers primarily to the use of the keyword this. The value of this depends on where it is being invoked.
 Invoking this in the global space will return the entire window object. This is because the window object is the starting point of all the code we write.
 
@@ -84,6 +84,49 @@ Invoking this in the global space will return the entire window object. This is 
       }
     const wizard1 = new Wizard('Shelly', 'Healer');
     const wizard2 = new Wizard('Shawn', 'Dark Magic');
+
+#### Objects vs Arrays
+
+// This is an OBJECT
+    let obj = {a: 'a', b: 'b', c: 'c'};
+
+// This is an ARRAY
+    let array = [1, 2, 3, 5, 5];
+
+// Cloning an Object
+    let obj = {a: 'a', b: 'b', c: 'c'};
+
+    let clone = Object.assign({}, obj);
+    let clone2 = {...obj};
+
+    obj.c = 5;
+    console.log(obj);
+    console.log(clone);
+    console.log(clone2);
+
+    <- {a: "a", b: "b", c: 5}
+    <- {a: "a", b: "b", c: "c"}
+    <- {a: "a", b: "b", c: "c"}
+
+// Deep Cloning with JSON
+
+    let obj = {a: 'a', b: 'b', c: {deep: 'copy me'}};
+
+    let clone = Object.assign({}, obj);
+    let clone2 = {...obj};
+    let superClone = JSON.parse(JSON.stringify(obj));
+
+
+    obj.c.deep = 'haha';
+    console.log(obj);
+    console.log(clone);
+    console.log(clone2);
+    console.log(superClone);
+
+    <- {a: "a", b: "b", c: "haha"}
+    <- {a: "a", b: "b", c: "haha"}
+    <- {a: "a", b: "b", c: "haha"}
+    <- {a: "a", b: "b", c: "copy me"} 
 
 # Thoughts: 
 
