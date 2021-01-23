@@ -128,11 +128,33 @@ Invoking this in the global space will return the entire window object. This is 
     <- {a: "a", b: "b", c: "haha"}
     <- {a: "a", b: "b", c: "copy me"} 
 
+#### Es7 
+
+// .includes()
+
+    const pets = ['cat', 'dog', 'bat'];
+    pets.includes('dog');
+
+    <- true
+
+// Exponential operator
+
+    const square = (x) => x**2;
+
+    square(2);
+
+    <- 4
+
 # Thoughts: 
 
 # Link to work: <br>
 
 # Resources: <br>
+[JS Comparison Table](https://dorey.github.io/JavaScript-Equality-Table/)<br>
+[Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)<br>
+[The Abstract Equality Comparison Algorithm](https://262.ecma-international.org/5.1/#sec-11.9.3)<br>
+**Useful Tool** [JavaScript Object Explorer](https://sdras.github.io/object-explorer/)<br>
+
 
 ----------------------------------------------------------
 
