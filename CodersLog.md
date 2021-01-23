@@ -7,13 +7,89 @@
 
 ## DATE, 2021 
 
-**Today's Progress**:
+# Today's Progress:
 
-**Thoughts**: 
+# Thoughts: 
 
-**Link to work**: <br>
+# Link to work: <br>
 
-**Resources**: <br>
+# Resources: <br>
+
+----------------------------------------------------------
+
+## LOG: #005
+
+## Jan 23rd, 2021 
+
+# Today's Progress:
+
+**Notes:**
+
+#### Advanced Objects:
+> Scope
+In the most simplified of terms, scope has two levels: global scope and local scope. Global scope refers to variables that are accessible anywhere because they are declared outside of any individual functions or methods — usually at the top of the file. They exist in the global space, ready to be called upon at any time. The first example below concerns global scope.
+![Picture(https://miro.medium.com/max/700/1*7mxyY1uQDid48yH1yJ0QtA.png)]
+
+> Context
+Context in JavaScript is another subject of confusion. It refers primarily to the use of the keyword this. The value of this depends on where it is being invoked.
+Invoking this in the global space will return the entire window object. This is because the window object is the starting point of all the code we write.
+
+// Referecene type
+
+    var obj1 = { value: 10 };
+    var obj2 = obj1;
+    var obj3 = { value: 10 };
+
+    > obj1 === obj2;
+    <- true
+
+    > obj2 === obj3;
+    <- false
+
+// Context vs Scope
+// Scope
+
+    function b() {
+        let a = 4;
+    }
+
+// Context 
+
+    const obj4 = {
+        a: function() {
+            console.log(this); 
+        }
+    }
+
+// Instantiation 
+
+    class Player {
+        consturctor(name, type) {
+            console.log(this);
+            this.name = name;
+            this.type = type;
+        }
+        introduce() {
+            console.log(`Hi, I am ${this.name}, I am a ${this.type}`);
+        }
+    }
+
+    class Wizard extends Player {
+        constructor(name, type) {
+          super(name, type);
+        }
+        play() {
+          console.log(`Kazaam! I am a ${this.type}!!`);
+        }
+      }
+    const wizard1 = new Wizard('Shelly', 'Healer');
+    const wizard2 = new Wizard('Shawn', 'Dark Magic');
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
 
 ----------------------------------------------------------
 
