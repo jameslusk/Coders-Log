@@ -146,11 +146,98 @@
        oranges
        grapes
 
+#### MAX_SAFE_INTEGER
+
+The MAX_SAFE_INTEGER constant has a value of 9007199254740991 (9,007,199,254,740,991 or ~9 quadrillion). The reasoning behind that number is that JavaScript uses double-precision floating-point format numbers as specified in IEEE 754 and can only safely represent integers between -(253 - 1) and 253 - 1.
+
+Safe in this context refers to the ability to represent integers exactly and to correctly compare them. For example, Number.MAX_SAFE_INTEGER + 1 === Number.MAX_SAFE_INTEGER + 2 will evaluate to true, which is mathematically incorrect. See Number.isSafeInteger() for more information.
+
+This field does not exist in old browsers. Using it without checking its existence, such as Math.max(Number.MAX_SAFE_INTEGER, 2), will yield undesired results such as NaN.
+
+Because MAX_SAFE_INTEGER is a static property of Number, you always use it as Number.MAX_SAFE_INTEGER, rather than as a property of a Number object you created.
+
+### Es2020
+
+#### BigInt
+// used when wanting to calculate above MAX SAFE INTEGER
+
+    typeof 1n;
+
+    <- "bigint"
+
+
+#### Optional Chaining '?.'
+
+    let willPokemon = {
+        pikachu: {
+            species: 'mouse',
+            height: 0.4,
+            weight: 6,
+        }
+    }
+
+    let weight = willPokemon.pikachu.weight;
+    console.log(`weight: `, weight)
+
+    <- weight: 6
+
+// Part 2
+
+    let willPokemon = {
+        pikachu: {
+            species: 'mouse',
+            height: 0.4,
+            weight: 6,
+        }
+    }
+
+    let jamesPokemon = {
+        raichu: {
+            species: 'mouse',
+            height: 0.8,
+            weight: 16,
+        }
+    }
+
+    let weight3 = jamesPokemon?.pikachu?.weight; // Replaces if statements
+
+    console.log(weight3);
+
+    <- undefined
+
+
+#### Nullish Coalescing Operator ?? (instead of || 'or' operator)
+
+    let willPokemon = {
+        pikachu: {
+            species: 'mouse',
+            height: 0.4,
+            weight: 6,
+        }
+    }
+
+    let jamesPokemon = {
+        pikachu: {
+            species: 'mouse',
+            height: 0.8,
+            weight: 16,
+            power: '',
+        }
+    }
+
+    let power = jamesPokemon?.pikachu?.power ?? 'no power';
+
+    console.log(power);
+
+    <- undefined
+
 # Thoughts: 
 
 # Link to work: <br>
 
 # Resources: <br>
+[MAX_SAFE_INTEGER](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER)<br>
+
 
 ----------------------------------------------------------
 
