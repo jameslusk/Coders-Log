@@ -17,6 +17,90 @@
 
 ----------------------------------------------------------
 
+## LOG: #006
+
+## Jan 24th, 2021 
+
+# Today's Progress:
+
+### Notes 
+
+#### Es10
+
+**flat()**
+// flat() to remove Nested Arrays
+
+    const array = [1,[2,3],[4,5]];
+
+    array.flat();
+
+    <- (5) [1, 2, 3, 4, 5]
+
+    const array = [1,2,[3,4,[5]]];
+
+    array.flat();
+
+    <- (5) [1, 2, 3, 4, Array(1)]
+
+// flay(2) flattens deeper in the array
+
+**flatMap()**
+
+    const array = [1,2,[3,4,[5]]];
+
+    const thisArray = array.flatMap(number => number + 2);
+    
+    <- (3) [3, 4, "3,4,52"]
+
+
+**Trimming**
+
+    userEmail = '              eddytheeagly@gmail.com'
+    userEmail2 = 'eddytheeagly@gmail.com              '
+
+    userEmail.trimStart()
+    userEmail2.trimEnd()
+
+
+**fromEntries**
+
+    userProfiles = [['commanderTom', 23], ['derekZlander', 40], ['hansel', 18]];
+
+    Object.fromEntries(userProfiles);
+
+    <- {commanderTom: 23, derekZlander: 40, hansel: 18}
+
+**try {} catch {}**
+
+    try {
+        4 + 5;
+    } catch {
+
+    }
+    <- 9
+
+    try {
+        bob + 'hi';
+    } catch {
+        console.log(`you messed up`);
+    }
+    <- you messed up
+
+    try {
+        bob + 'hi';
+    } catch (error) {
+        console.log(`you messed up` + error);
+    }
+    <- you messed up ReferenceError: bob is not defined
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #005
 
 ## Jan 23rd, 2021 
