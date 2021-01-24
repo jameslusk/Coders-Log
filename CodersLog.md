@@ -93,6 +93,59 @@
     }
     <- you messed up ReferenceError: bob is not defined
 
+#### Advanced loops in JavaScript
+
+// Method #1
+    const basket = ['apples', 'oranges', 'grapes'];
+
+    for (let i = 0; i < basket.length; i++) {
+        console.log(basket[i]);
+    }
+
+    <- apples
+       oranges
+       grapes 
+
+// Method #2
+
+    basket.forEach(item => {
+        console.log(item);
+    })
+
+    <- apples
+       oranges
+       grapes 
+
+// for of loop (iterating over array - going 1 by 1 and look at array/strings items)
+// for of loops only work on iterable elements (arrays, strings)
+
+    for (item of basket) {
+        console.log(item)
+    }
+
+    <- apples
+    oranges
+    grapes 
+
+// for in loop (loop over and see object properties)
+// for in loop only works for observing objects
+
+    const detailedBasket = {
+        apples : 5,
+        oranges: 10,
+        grapes: 1000,
+    }
+
+// 'apple' is property, where '5' is value (enumirating - for objects)
+
+    for (item in detailedBasket) {
+        console.log(item);
+    }
+
+    <- apples
+       oranges
+       grapes
+
 # Thoughts: 
 
 # Link to work: <br>
