@@ -252,13 +252,40 @@ Because MAX_SAFE_INTEGER is a static property of Number, you always use it as Nu
 
 // Sets off debugger in Console
 
+### What is JavaScript
+
+**JavaScript Definition:**
+an object-oriented computer programming language commonly used to create interactive effects within web browsers.
+
+**JavaScript** is single-threaded that can be non-blocking: meaning only one line of syntax is executed at a time and is also asynchronous. 
+ 
+// Call Stack
+
+// Web API
+
+// Call Back Queue
+
+// Event Loop
+
+## Website Project:
+
+Started a project from [FrontEnd Mentor](frontendmentor.io). 
+
 # Thoughts: 
 
+I was feeling a bit overwhelmed with thinking about how far I need to go just to get to a baseline level within web development. I am feeling a bit impatient. I have to remind myself that it all just takes time.
+
 # Link to work: <br>
+https://jameslusk.github.io/easyBank/
 
 # Resources: <br>
 [MAX_SAFE_INTEGER](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER)<br>
-
+[Brief history of JavaScript Modules](https://medium.com/sungthecoder/javascript-module-module-loader-module-bundler-es6-module-confused-yet-6343510e7bde)<br>
+[ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)<br>
+[JavaScript. The Core: 2nd Edition](http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/)<br>
+[The Modern JavaScript Tutorial](https://javascript.info/)<br>
+[You dont know javascript](https://github.com/getify/You-Dont-Know-JS)<br>
+[How to think like a programmer](https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/)
 
 ----------------------------------------------------------
 
