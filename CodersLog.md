@@ -17,6 +17,36 @@
 
 ----------------------------------------------------------
 
+## LOG: #007
+
+## Jan 25th, 2021 
+
+# Today's Progress:
+
+Read through JavaScript documentation regarding Browserify, ECMA, and Modules. Trying to understand.
+
+Worked in ZTM course with terminal window, and VS code options.
+
+ZTM - Started Git & GitHub section.
+
+**Easy Bank Website Project**
+Added responsive hamburger menu and mobile menu overlay with JavaScript functions 
+
+# Thoughts: 
+
+Glad to be getting into some GitHub functionality in my ZTM course and please with progress on website project. Let's go!
+
+# Link to work: <br>
+https://jameslusk.github.io/easyBank/
+
+# Resources: <br>
+[Brief history of JavaScript Modules](https://medium.com/sungthecoder/javascript-module-module-loader-module-bundler-es6-module-confused-yet-6343510e7bde)<br>
+[ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)<br>
+[JavaScript. The Core: 2nd Edition](http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/)<br>
+[The Modern JavaScript Tutorial](https://javascript.info/)<br>
+
+----------------------------------------------------------
+
 ## LOG: #006
 
 ## Jan 24th, 2021 
