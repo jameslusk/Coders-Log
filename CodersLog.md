@@ -17,6 +17,26 @@
 
 ----------------------------------------------------------
 
+## LOG: #008
+
+## Jan 26th, 2021 
+
+# Today's Progress:
+
+Whew! Long day of traveling for BNSF. Researched how to push your source code to a live server and domain. Used Netlify and linked to my GitHub. Not to difficult. Designed my Portfolio Page v1.
+
+# Thoughts: 
+
+I'm Tired
+
+# Link to work: <br>
+jameslusk.io
+
+# Resources: <br>
+[Netlify](netlify.com)
+
+----------------------------------------------------------
+
 ## LOG: #007
 
 ## Jan 25th, 2021 
