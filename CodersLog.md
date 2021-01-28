@@ -17,6 +17,25 @@
 
 ----------------------------------------------------------
 
+## LOG: #009
+
+## Jan 27th, 2021 
+
+# Today's Progress:
+
+Worked for about two hours on the Easy Bank website challenge from FrontEndMentor.io/. Finished up Menu popup and added Hero section images.
+
+# Thoughts: 
+
+Slowly plugging a long. Advanced CSS can be a bit overwhelming. There are a lot of syntax variables to learn to manipulate the visual appearance.
+
+# Link to work: <br>
+https://jameslusk.github.io/easyBank/
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #008
 
 ## Jan 26th, 2021 
