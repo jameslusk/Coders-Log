@@ -17,6 +17,25 @@
 
 ----------------------------------------------------------
 
+## LOG: #010
+
+## Jan 28th, 2021 
+
+# Today's Progress:
+
+Worked a little bit more on the Easy Bank Project. Fixed hero image/text div.
+
+# Thoughts: 
+
+I wish I had had more time to work on projects. Only go in 1.5hr.
+
+# Link to work: <br>
+https://jameslusk.github.io/easyBank/
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #009
 
 ## Jan 27th, 2021 
