@@ -17,6 +17,25 @@
 
 ----------------------------------------------------------
 
+## LOG: #012
+
+## Jan 30th, 2021 
+
+# Today's Progress:
+
+Finished Easy Bank web challange. Updated my Portfolio webpage with this newly finished project
+
+I am typing this as a way to test branches in git
+
+# Thoughts: 
+
+# Link to work: <br>
+[Easy Bank](https://trusting-ardinghelli-5ba15f.netlify.app/)
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #011
 
 ## Jan 29th, 2021 
