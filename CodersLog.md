@@ -17,6 +17,26 @@
 
 ----------------------------------------------------------
 
+## LOG: #011
+
+## Jan 29th, 2021 
+
+# Today's Progress:
+
+Worked on Easy Bank website project for roughly 2hrs. Finished section/feature and section/articles.
+
+# Thoughts: 
+
+Got some good practice in with flexbox, grid, and media queries. Felt good to get some solid reps in.
+
+# Link to work: <br>
+https://trusting-ardinghelli-5ba15f.netlify.app/
+
+# Resources: <br>
+[Responsive 4-column layout with CSS Grid | Build a responsive website from scratch (Part 6)](https://www.youtube.com/watch?v=FTEkwBDEjDg&list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k&index=6)
+
+----------------------------------------------------------
+
 ## LOG: #010
 
 ## Jan 28th, 2021 
@@ -30,9 +50,10 @@ Worked a little bit more on the Easy Bank Project. Fixed hero image/text div.
 I wish I had had more time to work on projects. Only go in 1.5hr.
 
 # Link to work: <br>
-https://jameslusk.github.io/easyBank/
+https://trusting-ardinghelli-5ba15f.netlify.app/
 
 # Resources: <br>
+[Responsive 4-column layout with CSS Grid | Build a responsive website from scratch (Part 6)](https://www.youtube.com/watch?v=FTEkwBDEjDg&list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k&index=6)
 
 ----------------------------------------------------------
 
@@ -52,6 +73,7 @@ Slowly plugging a long. Advanced CSS can be a bit overwhelming. There are a lot 
 https://jameslusk.github.io/easyBank/
 
 # Resources: <br>
+[Responsive 4-column layout with flexbox | Build a responsive website from scratch (Part 5)](https://www.youtube.com/watch?v=8_AWtI_SOU8&list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k&index=5)
 
 ----------------------------------------------------------
 
