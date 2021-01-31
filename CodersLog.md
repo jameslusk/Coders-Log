@@ -93,11 +93,8 @@ git push origin :crazy-experiment
 
 # Thoughts: 
 
-<<<<<<< HEAD
 Long day
 
-=======
->>>>>>> d58d6160684a519eb75ceb2a6cf7a8644bc5335c
 # Link to work: <br>
 [Easy Bank](https://trusting-ardinghelli-5ba15f.netlify.app/)
 
