@@ -17,6 +17,74 @@
 
 ----------------------------------------------------------
 
+## LOG: #013
+
+## Jan 31st, 2021 
+
+# Today's Progress:
+
+**What is NPM**
+npm is a package manager for the JavaScript programming language.
+
+It is the default package manager for the JavaScript runtime environment Node.js
+
+It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry.
+
+npm is the world's largest Software Registry. The registry contains over 800,000 code packages. Open-source developers use npm to share software. Many organizations also use npm to manage private development.
+
+Create a new React-based project using create-react-app:
+
+$ npm init react-app ./my-react-app
+
+**What is JSON**
+JSON (JavaScript Object Notation) is a common data storage format,
+typically used for its simplicity when your code needs to read from it.
+
+- JSON stands for JavaScript Object Notation
+
+- JSON is a lightweight format for storing and transporting data
+
+- JSON is often used when data is sent from a server to a web page
+
+- JSON is "self-describing" and easy to understand
+
+JavaScript Object Notation 
+	Its a key value pair 
+	its popular light-weight way of transfering data 
+
+	for example : 
+	Lets try to create a json for Person Object 
+			with name , age , isMarried , gender 
+
+		Its ket value pair 
+		the key is always String and need to be in quotation
+		value can be :
+			String 
+			Number 
+			Boolean 
+			null 
+			array 
+			another json object
+
+
+		This is one json with 5 fields 
+		each key value pair should be separated by comma 
+		{
+			"name" 		: "Anna", 
+			"age" 		: 18  , 
+			"isMarried" : false , 
+			"gender"	: "female", 
+			"company"	: null 
+		}
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #012
 
 ## Jan 30th, 2021 
