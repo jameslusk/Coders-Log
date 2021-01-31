@@ -77,11 +77,48 @@ JavaScript Object Notation
 			"company"	: null 
 		}
 
+**To Start a NEW JSON & Live-Server**
+    $ npm init
+
+    $ sudo npm install -g live-server
+
+Typing '$ live-server' in the terminal will open a locally hosted browser window.
+
+**LoDash**
+    $ npm install lodash
+
+Why Lodash?
+Lodash makes JavaScript easier by taking the hassle out of working with arrays, numbers, objects, strings, etc.
+Lodash’s modular methods are great for:
+
+Iterating arrays, objects, & strings
+Manipulating & testing values
+Creating composite functions
+
+[Lodash](https://lodash.com/)
+
+
+**browserify**
+    $ sudo npm install -g browserify
+
+require('modules') in the browser
+
+Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
+
+Use a node-style require() to organize your browser code and load modules installed by npm.
+
+browserify will recursively analyze all the require() calls in your app in order to build a bundle you can serve up to the browser in a single <script> tag.
+
+[Browserify](http://browserify.org/)
+
 # Thoughts: 
 
 # Link to work: <br>
 
 # Resources: <br>
+[Lodash](https://lodash.com/)<br>
+[Browserify](http://browserify.org/)<br>
+
 
 ----------------------------------------------------------
 
