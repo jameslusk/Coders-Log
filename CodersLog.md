@@ -17,6 +17,47 @@
 
 ----------------------------------------------------------
 
+## LOG: #014
+
+## Feb 2nd, 2021 
+
+# Today's Progress:
+
+Read an article about JSX in React.
+
+**What is JSX?**
+JSX is a JavaScript Extension Syntax used in React to easily write HTML and JavaScript together.
+
+Take a look at the below code:
+
+    const jsx = <h1>This is JSX</h1>
+
+This is simple JSX code in React. But the browser does not understand this JSX because it's not valid JavaScript code. This is because we're assigning an HTML tag to a variable that is not a string but just HTML code.
+
+**We can use the above JSX in our React code like this:**
+
+    class JSXDemo extends React.Component {
+        render() {
+            return <h1>This is JSX</h1>;
+        }
+    }
+
+    ReactDOM.render(<JSXDemo />, document.getElementById('root'));
+
+I also did a little bit of hand coding wiht the Mimo app on my iphone, as well as read up on JavaScript with CodePlayGround app on my iphone.
+
+# Thoughts: 
+
+Hard to get some good coding hours in on travel days
+
+# Link to work: <br>
+- Null
+
+# Resources: <br>
+[JSX in React](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
+
+----------------------------------------------------------
+
 ## LOG: #013
 
 ## Jan 31st, 2021 
@@ -111,6 +152,16 @@ browserify will recursively analyze all the require() calls in your app in order
 
 [Browserify](http://browserify.org/)
 
+### React
+
+**Create New React App**
+    $ npx create-react-app my-app
+    $ cd my-app
+    $ npm start
+
+**Tachyons**
+    $ npm install tachyons
+
 # Thoughts: 
 
 # Link to work: <br>
@@ -118,6 +169,8 @@ browserify will recursively analyze all the require() calls in your app in order
 # Resources: <br>
 [Lodash](https://lodash.com/)<br>
 [Browserify](http://browserify.org/)<br>
+[Free Logo Maker](https://hatchful.shopify.com/)<br>
+[React Get Started](https://create-react-app.dev/docs/getting-started/)<br>
 
 
 ----------------------------------------------------------
