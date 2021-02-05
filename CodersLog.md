@@ -80,6 +80,77 @@ The termination condition of a promise determines the "settled" state of the nex
     handleRejection(reason)  { /*...*/; throw  nextReason; }
     handleRejection(reason)  { /*...*/; return nextValue;  }
 
+**Es8 ASYNC AWAIT**
+
+#### e.g. #1
+
+    movePlayer(100, 'Left')
+        .then(() => movePlayer(400, 'Left'))
+        .then(() => movePlayer(10, 'Right'))
+        .then(() => movePlayer(330, 'Left')
+
+**VS**
+    
+    async function playerStart() {
+        const first = await movePlayer(100, 'Left')// Pause
+        const second = await movePlayer(400, 'Left')// Pause
+        const third = await movePlayer(10, 'Right')// Pause
+        const fourth = await movePlayer(330, 'Left')// Pause
+    }
+
+#### e.g. #2
+
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(resp => resp.json())
+        .then(console.log
+
+**VS**
+
+    async function fetchUsers() {
+        const resp = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await resp.json()
+        console.log(data)
+    }
+
+#### e.g. #3
+
+    const urls = [
+        'https://jsonplaceholder.typicode.com/users',
+        'https://jsonplaceholder.typicode.com/posts',
+        'https://jsonplaceholder.typicode.com/albums'    
+    ]
+    
+      Promise.all(urls.map(url =>
+          fetch(url).then(people => people.json())
+      ))
+        .then(array => {
+          console.log('users', array[0])
+          console.log('posts', array[1])
+          console.log('albums', array[2])
+        })
+        .catch(err => console.log('ughhhh fix it!', err));
+
+**VS**
+
+    const urls = [
+        'https://jsonplaceholder.typicode.com/users',
+        'https://jsonplaceholder.typicode.com/posts',
+        'https://jsonplaceholder.typicode.com/albums'    
+    ]
+
+    const getData = async function() {
+        try {
+            const [ users, posts, albums ] = await Promise.all(urls.map(url =>
+                fetch(url).then(people => people.json())
+            ))
+            console.log('users', users)
+            console.log('posts', posts)
+            console.log('albums', albums)
+        } catch (err) {
+            console.log('oops', err)
+        }
+    }
+
 # Thoughts: 
 
 # Link to work: <br>
