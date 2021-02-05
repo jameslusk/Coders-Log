@@ -17,6 +17,78 @@
 
 ----------------------------------------------------------
 
+## LOG: #016
+
+## Feb 5th, 2021 
+
+# Today's Progress:
+
+Started the day sovling my RoboFriends app issue. For some reason my API with JSON/users was being deployed as HTTP as opposed to HTTPS, therefore it was pushing users to the LOADING (implemented in code if API is down) screen. I'm not exactly sure what caused this issue. To solve I simply re ran the process of NPM build and repackaged the code for deployment. Wonderously, it worked. 
+
+### `Todays Notes`
+
+**AJAX*
+
+Ajax is a set of web development techniques using many web technologies on the
+client side to create asynchronous web applications.
+
+With Ajax, web applications can send and retrieve data from a server
+asynchronously without interfering with the display and behaviour of the 
+existing page. 
+
+**Promises**
+
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+Description
+A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+
+A Promise is in one of these states:
+
+- pending: initial state, neither fulfilled nor rejected.
+- fulfilled: meaning that the operation was completed successfully.
+- rejected: meaning that the operation failed.
+
+A pending promise can either be fulfilled with a value or rejected with a reason (error). When either of these options happens, the associated handlers queued up by a promise's then method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
+
+As the Promise.prototype.then() and Promise.prototype.catch() methods return promises, they can be chained.
+
+**Chained Promises**
+
+The methods promise.then(), promise.catch(), and promise.finally() are used to associate further action with a promise that becomes settled. These methods also return a newly generated promise object, which can optionally be used for chaining; for example, like this:
+
+    const myPromise =
+    (new Promise(myExecutorFunc))
+    .then(handleFulfilledA,handleRejectedA)
+    .then(handleFulfilledB,handleRejectedB)
+    .then(handleFulfilledC,handleRejectedC);
+
+    // or, perhaps better ...
+
+    const myPromise =
+    (new Promise(myExecutorFunc))
+    .then(handleFulfilledA)
+    .then(handleFulfilledB)
+    .then(handleFulfilledC)
+    .catch(handleRejectedAny);
+
+Handling a rejected promise too early has consequences further down the promise chain. Sometimes there is no choice because an error must be handled immediately; in such cases we must throw something, even if it is a dummy error message like throw -999, to maintain error state down the chain. On the other hand, in the absence of an immediate need it is simpler to leave out error handling until a final .catch() statement.
+
+The termination condition of a promise determines the "settled" state of the next promise in the chain. Any termination other than a throw creates a "resolved" state while terminating with a throw creates a "rejected" state.
+
+    handleFulfilled(value)       { /*...*/; return nextValue;  }
+    handleRejection(reason)  { /*...*/; throw  nextReason; }
+    handleRejection(reason)  { /*...*/; return nextValue;  }
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
+[Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<br>
+
+----------------------------------------------------------
+
 ## LOG: #015
 
 ## Feb 4th, 2021 
@@ -65,6 +137,8 @@ UNSAFE_componentWillMount()
 # Link to work: <br>
 
 # Resources: <br>
+[Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)<br>
+
 
 ----------------------------------------------------------
 
