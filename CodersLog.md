@@ -17,6 +17,70 @@
 
 ----------------------------------------------------------
 
+## LOG: #017
+
+## Feb 6th, 2021 
+
+# Today's Progress:
+
+**Es9 Object Spread Operator**
+
+Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+
+**Description**
+Spread syntax can be used when all elements from an object or array need to be included in a list of some kind. 
+
+In the above example, the defined function takes x, y, and z as arguments and returns the sum of these values. An array value is also defined.
+
+When we invoke the function, we pass it all the values in the array using the spread syntax and the array name — ...numbers.
+
+If the array contained more than three numbers, e.g. [1, 2, 3, 4], then it would still work fine, except that all four would be passed, but only the first three would be used unless you added more arguments to the function, e.g.:
+
+    function sum(x, y, z, n) {
+    return x + y + z + n;
+    }
+
+**OR**
+
+    const animals = {
+        tiger: 23,
+        lion: 5,
+        monkey: 2    
+    }
+
+    const { tiger, ...rest } = animals;
+
+**OR**
+
+    const array = [1,2,3,4,5];
+    function sum (a,b,c,d,e) {
+        return a + b + c + d + e;
+    }
+
+    sum(...array);
+
+    <- 15
+
+**spread operators can be used for arrays or objects**
+
+**cloning to prevent mutation.**
+    let numList = [1,2,3];
+    let numListClone = [...numList]; **[1, 2, 3]**
+
+**spread operator for destructuring.**
+    let animal = {
+    name: 'dog',
+    color: 'brown',
+    age: 7
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #016
 
 ## Feb 5th, 2021 
@@ -27,7 +91,7 @@ Started the day sovling my RoboFriends app issue. For some reason my API with JS
 
 ### `Todays Notes`
 
-**AJAX*
+**AJAX**
 
 Ajax is a set of web development techniques using many web technologies on the
 client side to create asynchronous web applications.
