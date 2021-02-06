@@ -23,7 +23,7 @@
 
 # Today's Progress:
 
-**Es9 Object Spread Operator**
+#### **Es9 Object Spread Operator**
 
 Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
@@ -73,11 +73,80 @@ If the array contained more than three numbers, e.g. [1, 2, 3, 4], then it would
     color: 'brown',
     age: 7
 
+#### **Finally**
+
+Finally is used to place important code, it will be executed
+whether an exception is handled or not. Finally is a block
+
+A finally block contains all the crucial statements that must be executed whether exception occurs or not. The statements present in this block will always execute regardless of whether exception occurs in try block or not such as closing a connection, stream etc.
+
+Syntax of Finally block
+    try {
+        **Statements that may cause an exception**
+    }
+    catch {
+        **Handling exception**
+    }
+    finally {
+        **Statements to be executed**
+    }
+
+
+
+    const urls = [
+        'https://jsonplaceholder.typicode.com/users',
+        'https://jsonplaceholder.typicode.com/posts',
+        'https://jsonplaceholder.typicode.com/albums'    
+    ]
+
+    Promise.all(urls.map(url =>
+        fetch(url).then(people => people.json())
+    ))
+        .then(array => {
+        console.log('users', array[0])
+        console.log('posts', array[1])
+        console.log('albums', array[2])
+        })
+        .catch(err => console.log('ughhhh fix it!', err))
+        .finally(() => console.log('extra'));
+
+#### **for await of**
+
+    const urls = [
+        'https://jsonplaceholder.typicode.com/users',
+        'https://jsonplaceholder.typicode.com/posts',
+        'https://jsonplaceholder.typicode.com/albums'    
+    ]
+
+    const getData = async function() {
+        try {
+            const [ users, posts, albums ] = await Promise.all(urls.map(url =>
+                fetch(url).then(people => people.json())
+            ));
+            console.log('users', users);
+            console.log('posts', posts);
+            console.log('albums', albums);
+        } catch (err) {
+            console.log('oops', err);
+        }
+    }
+
+    const getData2 = async function() {
+        const arrayOfPromises = urls.map(url => fetch(url));
+        for await (let request of arrayOfPromises) {
+            const data = await request.json();
+            console.log(data);
+        }
+    }
+
 # Thoughts: 
 
 # Link to work: <br>
 
 # Resources: <br>
+[Spread syntax (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)<br>
+[Finally](https://beginnersbook.com/2013/04/java-finally-block/#:~:text=A%20finally%20block%20contains%20all,closing%20a%20connection%2C%20stream%20etc.)<br>
+
 
 ----------------------------------------------------------
 
