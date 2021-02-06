@@ -193,9 +193,16 @@ Using Promise.allSettled
     //   {status: "rejected",  reason: Error: an error}
     // ]
 
+#### `Todays Project`
+
+I worked with a free Starwars API to create a random character profile generator.
+
 # Thoughts: 
 
+Information Overload
+
 # Link to work: <br>
+[Star Wars API](https://jameslusk.github.io/starwars-api/)
 
 # Resources: <br>
 [Spread syntax (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)<br>
