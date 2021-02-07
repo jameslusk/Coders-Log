@@ -17,6 +17,24 @@
 
 ----------------------------------------------------------
 
+## LOG: #018
+
+## Feb 7th, 2021 
+
+# Today's Progress:
+
+I worked on creating a facial recognition app
+
+# Thoughts: 
+
+I have no idea what I'm doing
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #017
 
 ## Feb 6th, 2021 
@@ -196,6 +214,7 @@ Using Promise.allSettled
 #### `Todays Project`
 
 I worked with a free Starwars API to create a random character profile generator.
+[Link to StarWars API Tutorial](https://www.youtube.com/watch?v=aISMFLKUC8o)
 
 # Thoughts: 
 
