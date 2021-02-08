@@ -17,6 +17,68 @@
 
 ----------------------------------------------------------
 
+## LOG: #019
+
+## Feb 8th, 2021 
+
+# Today's Progress:
+
+#### `Notes`
+
+Exporting a global object in **Node.js**, #### the old way
+
+**file-1.js**
+    const largeNumber = 365;
+
+    module.exports = {
+        largeNumber: largeNumber
+    }
+
+**file-2.js**
+
+    const file-1 = require('./file-1.js);
+
+    const a = file-1.largeNumber;
+    const b = 5; 
+
+    console.log(a + b);
+
+    <- 370
+
+Exporting a global object in **Node.js**, #### the NEW way
+
+**file-1.mjs**
+
+    export const largeNumber = 365;
+
+**file-2.mjs**
+
+    import { largeNumber } from './file-1.mjs'
+
+
+    const a = largeNumber;
+    const b = 5; 
+
+    console.log(a + b);
+
+    <- 370
+
+**OR**
+
+Keep file name file-1.js instead of .mjs by addin
+
+ "type": "module",
+
+to the JSON file it will read
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #018
 
 ## Feb 7th, 2021 
