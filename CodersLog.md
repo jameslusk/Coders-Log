@@ -73,7 +73,10 @@ to the JSON file it will read
 
 # Thoughts: 
 
+Working through building back end server on Face Recognition APP. A lot is going on. Confusing.
+
 # Link to work: <br>
+No links yet
 
 # Resources: <br>
 
