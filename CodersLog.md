@@ -17,6 +17,23 @@
 
 ----------------------------------------------------------
 
+## LOG: #020
+
+## Feb 10th, 2021 
+
+# Today's Progress:
+
+Wokred a short while in the morning with nodemon and live back end server
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
+[nodemon](https://www.npmjs.com/package/nodemon)
+
+----------------------------------------------------------
+
 ## LOG: #019
 
 ## Feb 8th, 2021 
