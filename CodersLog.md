@@ -17,6 +17,69 @@
 
 ----------------------------------------------------------
 
+## LOG: #021
+
+## Feb 11th, 2021 
+
+# Today's Progress: 
+
+#### `AM`
+
+Working on Facial Recognition Project - understanding GET and POST http requests. Downloaded Postman app to simulate back end servers. 
+
+Worked on RESTful API
+
+and `NODE File SYSTEM Module`
+
+    const fs = require('fs');
+
+    fs.readFile('./hello.txt', (err, data) => {
+        if (err) {
+            console.log('error');
+        }
+
+        console.log(data.toString());
+    });
+
+    const file = fs.readFileSync('./hello.txt');
+    console.log(file.toString());
+
+    APPEND
+    fs.appendFile('./hello.txt', ' This is so cool!', err => {
+        if (err) {
+            console.log(err);
+        }
+    });
+
+    WRITE NEW FILE
+
+    fs.writeFile('by.txt', 'Sad to see you go', err => {
+        if (err) {
+            console.log(err);
+        }
+    });
+
+    DELETE
+
+    fs.unlink('./by.txt', err => {
+        if (err) {
+            console.log(err);
+        }
+        console.log('Inception');
+    });
+
+# Thoughts: 
+
+Brain hurts
+
+# Link to work: <br>
+
+# Resources: <br>
+[Postman](https://www.postman.com/)<br>
+
+
+----------------------------------------------------------
+
 ## LOG: #020
 
 ## Feb 10th, 2021 
@@ -24,6 +87,12 @@
 # Today's Progress:
 
 Wokred a short while in the morning with nodemon and live back end server
+
+**Express**
+    npm install express
+    npm install express --save
+    Docs : https://expressjs.com/
+    - Example API : https://jareer.xyz/ - 
 
 # Thoughts: 
 
