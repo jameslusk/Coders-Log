@@ -9,15 +9,31 @@
 
 # Today's Progress:
 
-Worked on setting up back end server for my Face Recon final project. Built /signin, /register, and /image counter and tested it with Postman app
-
 # Thoughts: 
-
-I've been out in NM for my railroad job building route sheets all day for testing Belen JCT and honestly, my brain is fried.
 
 # Link to work: <br>
 
 # Resources: <br>
+
+----------------------------------------------------------
+
+## LOG: #023
+
+## Feb 13th, 2021 
+
+# Today's Progress:
+
+`AM Session`
+
+Worked on Face Recon project. Setup bcrypt with NPM to encrypt passwords that users enter. Connected back end with front end to fetch user log in info and display use it to log into the app. Also hooked up with npm cors. CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
+[bcryptjs](https://www.npmjs.com/package/bcryptjs)<br>
+[cors](https://www.npmjs.com/package/cors)<br>
 
 ----------------------------------------------------------
 
@@ -27,7 +43,11 @@ I've been out in NM for my railroad job building route sheets all day for testin
 
 # Today's Progress:
 
+Worked on setting up back end server for my Face Recon final project. Built /signin, /register, and /image counter and tested it with Postman app
+
 # Thoughts: 
+
+I've been out in NM for my railroad job building route sheets all day for testing Belen JCT and honestly, my brain is fried.
 
 # Link to work: <br>
 
