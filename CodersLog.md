@@ -9,6 +9,24 @@
 
 # Today's Progress:
 
+Worked on setting up back end server for my Face Recon final project. Built /signin, /register, and /image counter and tested it with Postman app
+
+# Thoughts: 
+
+I've been out in NM for my railroad job building route sheets all day for testing Belen JCT and honestly, my brain is fried.
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
+## LOG: #022
+
+## Feb 12th, 2021 
+
+# Today's Progress:
+
 # Thoughts: 
 
 # Link to work: <br>
