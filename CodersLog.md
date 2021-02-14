@@ -27,7 +27,13 @@
 
 Worked on Face Recon project. Setup bcrypt with NPM to encrypt passwords that users enter. Connected back end with front end to fetch user log in info and display use it to log into the app. Also hooked up with npm cors. CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 
-# Thoughts: 
+`PM Session`
+
+Worked on routing user registeration
+
+# Thoughts:
+
+Working all day with the railroad and then doing coding has me feeling real burnt out.
 
 # Link to work: <br>
 
