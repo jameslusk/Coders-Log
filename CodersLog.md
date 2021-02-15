@@ -17,6 +17,30 @@
 
 ----------------------------------------------------------
 
+## LOG: #024
+
+## Feb 14th, 2021 
+
+# Today's Progress:
+
+    $ createdb 'smart-brain'
+
+    $ psql smart-brain
+
+    $ CREATE TABLE users (id serial PRIMARY key, name VARCHAR(100), email text UNIQUE NOT NULL, entries BIGINT DEFAULT 0, joined TIMESTAMP NOT NULL);
+
+    $ GRANT ALL PRIVILEGES ON TABLE users TO jameslusk;
+
+# Thoughts: 
+
+Coded for 5hrs...struggling with SQL
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #023
 
 ## Feb 13th, 2021 
