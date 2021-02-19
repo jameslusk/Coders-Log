@@ -17,6 +17,29 @@
 
 ----------------------------------------------------------
 
+## LOG: #025
+
+## Feb 19th, 2021 
+
+# Today's Progress:
+
+Spent 3hrs building the Oak Underground website as a freelance job through wordpress.
+
+Spent a short time working on learning SASS a bit better.
+
+# Thoughts: 
+
+Been out of power for the last 48 hrs, just got it back and trying to get back into the groove of coding.
+
+# Link to work: <br>
+
+no links
+# Resources: <br>
+
+no resources
+
+----------------------------------------------------------
+
 ## LOG: #024
 
 ## Feb 14th, 2021 
