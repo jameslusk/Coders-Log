@@ -25,7 +25,11 @@
 
 Spent the first part of my morning working through a Sass crash course on youtube provided by Traversy Media.
 
+Started Udemy course titled: Modern HTML & CSS by Traversy Media. Lot's of HTML review for me.
+
 # Thoughts: 
+
+I needed to chunk down all it takes to be a full-stack developer and learn deeply about each skillset. I began that part of my journey today.
 
 # Link to work: <br>
 [Sass Crash Course via Traversy](https://jameslusk.github.io/sass-practice/)<br>
