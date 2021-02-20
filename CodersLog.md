@@ -17,6 +17,24 @@
 
 ----------------------------------------------------------
 
+## LOG: #026
+
+## Feb 20th, 2021 
+
+# Today's Progress:
+
+Spent the first part of my morning working through a Sass crash course on youtube provided by Traversy Media.
+
+# Thoughts: 
+
+# Link to work: <br>
+[Sass Crash Course via Traversy](https://jameslusk.github.io/sass-practice/)<br>
+
+# Resources: <br>
+[Traversy Youtube: SASS Crash](https://www.youtube.com/watch?v=nu5mdN2JIwM)<br>
+
+----------------------------------------------------------
+
 ## LOG: #025
 
 ## Feb 19th, 2021 
