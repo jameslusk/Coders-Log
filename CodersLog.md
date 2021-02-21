@@ -19,6 +19,24 @@
 
 ## LOG: #026
 
+## Feb 21st, 2021 
+
+# Today's Progress:
+
+Finished part 1 of Modern HTML & CSS course which covered basic HTML5.
+
+# Thoughts: 
+
+# Link to work: <br>
+[Basic HTML5](https://jameslusk.github.io/sandBox-1/)<br>
+
+# Resources: <br>
+[Entities](https://www.w3schools.com/html/html_entities.asp)<br>
+
+----------------------------------------------------------
+
+## LOG: #026
+
 ## Feb 20th, 2021 
 
 # Today's Progress:
