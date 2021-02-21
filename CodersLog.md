@@ -25,10 +25,13 @@
 
 Finished part 1 of Modern HTML & CSS course which covered basic HTML5.
 
+Started lesson 2 which is covering CSS basics.
+
 # Thoughts: 
 
 # Link to work: <br>
 [Basic HTML5](https://jameslusk.github.io/sandBox-1/)<br>
+[CSS Basics](https://jameslusk.github.io/cssBasics/)<br>
 
 # Resources: <br>
 [Entities](https://www.w3schools.com/html/html_entities.asp)<br>
