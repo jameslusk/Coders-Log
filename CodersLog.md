@@ -17,6 +17,42 @@
 
 ----------------------------------------------------------
 
+## LOG: #027
+
+## Feb 22nd, 2021 
+
+# Today's Progress:
+
+Ran through CSS basics in the Modern HTML & CSS course.
+
+Built a Sign up form mock up.
+
+` REM Trick `
+A typical method is to set the HTML font-size to 62.5%. That's because 62.5% of 16px (typical default browser font-size) is 10px. That would still make 1.6rem = 16px. This now means that if the user's default browser font-size is changed to, for example, 20px, 1.6rem would now equal 20px.
+
+    html {
+        font-size: 62.5%;
+    }
+
+    p {
+        font-size: 1.6rem; 
+    }
+
+[Link](https://engageinteractive.co.uk/blog/em-vs-rem-vs-px#:~:text=A%20typical%20method%20is%20to,rem%20would%20now%20equal%2020px.)
+
+# Thoughts: 
+
+Feelin' good.
+
+# Link to work: <br>
+[Sign Up Form](https://jameslusk.github.io/formStyling/)
+
+# Resources: <br>
+[Box Sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)<br>
+[Sticky](https://www.w3schools.com/howto/howto_css_sticky_element.asp)
+
+----------------------------------------------------------
+
 ## LOG: #026
 
 ## Feb 21st, 2021 
