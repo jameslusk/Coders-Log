@@ -17,6 +17,24 @@
 
 ----------------------------------------------------------
 
+## LOG: #028
+
+## Feb 23rd, 2021 
+
+# Today's Progress:
+
+Spent some time building a nav bar for a Spider-Man tribute project.
+
+# Thoughts: 
+
+Just getting it in on the plane on a travel day.
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #027
 
 ## Feb 22nd, 2021 
