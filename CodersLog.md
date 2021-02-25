@@ -17,6 +17,25 @@
 
 ----------------------------------------------------------
 
+## LOG: #029
+
+## Feb 24th, 2021 
+
+# Today's Progress:
+
+Started building a hotel website as part of a walk through in the Modern HTML & CSS course.
+
+# Thoughts: 
+
+Feeling pretty comfy with basic html and css
+
+# Link to work: <br>
+[Hotel Wakanda](https://jameslusk.github.io/hotel-wakanda/)
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #028
 
 ## Feb 23rd, 2021 
