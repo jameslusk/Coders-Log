@@ -17,6 +17,35 @@
 
 ----------------------------------------------------------
 
+## LOG: #030
+
+## Feb 25th, 2021 
+
+# Today's Progress:
+
+Continued on the Hotel Wakanda project tutorial with the Udemy course. Made a simple Home, About, and Contact page using basic HTML and CSS.
+
+[Black Panther Color Scheme](https://www.schemecolor.com/black-panthers-vibranium-color-scheme.php#:~:text=The%20Black%20Panther's%20Vibranium%20Color,%5BFOGRA29%5D%20(%230C0B13).)
+
+#### Font Awesome link tag
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+# Thoughts: 
+
+I'm please with my progress and understanding of hmtl and css. I definitely am getting the hang of this web design thing.
+
+# Link to work: <br>
+[Hotel Wakanda](https://jameslusk.github.io/hotel-wakanda/)
+
+# Resources: <br>
+[Font-Awesome](https://fontawesome.com/)<br>
+[HTML text area](https://www.w3schools.com/tags/tag_textarea.asp)<br>
+[Opacity](https://stackoverflow.com/questions/35684344/how-to-fade-an-image-with-css-without-opacity)
+
+----------------------------------------------------------
+
 ## LOG: #029
 
 ## Feb 24th, 2021 
