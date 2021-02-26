@@ -17,6 +17,39 @@
 
 ----------------------------------------------------------
 
+## LOG: #031
+
+## Feb 26th, 2021 
+
+# Today's Progress:
+
+`Media Queries:`
+
+Media Query Style Sheet
+    <link rel="stylesheet" media="screen and (max-width: 768px" href="mobile.css">
+
+    @media (max-width: 768px) {
+        body {
+            background: black;
+            color: white;
+        }
+    }
+
+#### Breakpoint Sizes
+- 320px — 480px: Mobile devices.
+- 481px — 768px: iPads, Tablets.
+- 769px — 1024px: Small screens, laptops.
+- 1025px — 1200px: Desktops, large screens.
+- 1201px and more — Extra large screens, TV.
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #030
 
 ## Feb 25th, 2021 
