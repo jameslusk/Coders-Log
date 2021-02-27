@@ -17,6 +17,28 @@
 
 ----------------------------------------------------------
 
+## LOG: #032
+
+## Feb 27th, 2021 
+
+# Today's Progress:
+
+`AM SESSION`
+
+Wrapped up Hotel Wakanda website with media queries. Having a bit of an issue with the About page. Will address later. 
+
+Moving on to FlexBox...
+
+# Thoughts: 
+
+# Link to work: <br>
+[Hotel Wakanda](https://jameslusk.github.io/hotel-wakanda/)
+
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #031
 
 ## Feb 26th, 2021 
