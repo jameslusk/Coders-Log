@@ -29,6 +29,9 @@ Wrapped up Hotel Wakanda website with media queries. Having a bit of an issue wi
 
 Moving on to FlexBox...
 
+#### Started New Project
+Worked on EdgeLedger website landing page.
+
 # Thoughts: 
 
 # Link to work: <br>
