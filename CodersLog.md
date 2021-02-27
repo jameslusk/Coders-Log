@@ -42,9 +42,16 @@ Media Query Style Sheet
 - 1025px — 1200px: Desktops, large screens.
 - 1201px and more — Extra large screens, TV.
 
+`Evening Session`
+
+Spent the evening adding media queries to the Hotel Wakanda website
+
 # Thoughts: 
 
+Feeling good
+
 # Link to work: <br>
+[Hotel Wakanda](https://jameslusk.github.io/hotel-wakanda/)
 
 # Resources: <br>
 
