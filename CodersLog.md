@@ -17,6 +17,27 @@
 
 ----------------------------------------------------------
 
+## LOG: #033
+
+## Feb 28th, 2021 
+
+# Today's Progress:
+
+`AM SESSION`
+
+Worked on EdgeLedger website. Added more pages and got back into JavaScript!
+
+# Thoughts: 
+
+I'm sort of understanding JS now...
+
+# Link to work: <br>
+[EdgeLedger](https://jameslusk.github.io/edgeledger-website/)
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #032
 
 ## Feb 27th, 2021 
