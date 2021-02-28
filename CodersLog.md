@@ -32,6 +32,50 @@ Moving on to FlexBox...
 #### Started New Project
 Worked on EdgeLedger website landing page.
 
+`PM SESSION`
+
+Didn't work that long. Knocked out the Hero, About, and Icons section of the EdgeLedger website.
+
+#### Learned about Object-fit
+
+The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+
+The CSS object-fit Property
+The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+
+This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".
+
+Look at the following image from Paris. This image is 400 pixels wide and 300 pixels high:
+
+Paris
+However, if we style the image above to be half its width (200 pixels) and same height (300 pixels), it will look like this:
+
+Paris
+Example
+    img {
+    width: 200px;
+    height: 300px;
+    }
+We see that the image is being squished to fit the container of 200x300 pixels (its original aspect ratio is destroyed).
+
+Here is where the object-fit property comes in. The object-fit property can take one of the following values:
+
+fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+none - The image is not resized
+scale-down - the image is scaled down to the smallest version of none or contain
+Using object-fit: cover;
+If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit:
+
+Paris
+Example
+    img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    }
+
 # Thoughts: 
 
 # Link to work: <br>
@@ -39,6 +83,7 @@ Worked on EdgeLedger website landing page.
 
 
 # Resources: <br>
+[Object-Fit](https://www.w3schools.com/css/css3_object-fit.asp)
 
 ----------------------------------------------------------
 
