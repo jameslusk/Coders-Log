@@ -17,6 +17,30 @@
 
 ----------------------------------------------------------
 
+
+## LOG: #034
+
+## Mar 6th, 2021 
+
+# Today's Progress:
+
+Spent the first part of the morning working on my freelance website job oakunderground.com
+
+Pretty much finished that up.
+
+Then got into some tutorials with my Modern HTML & CSS basics course.
+
+# Thoughts: 
+
+Not really feeling it today...
+
+# Link to work: <br>
+[OakUnderground](https://oakunderground.com)
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 ## LOG: #033
 
 ## Feb 28th, 2021 
