@@ -17,6 +17,33 @@
 
 ----------------------------------------------------------
 
+## LOG: #035
+
+## Mar 7th, 2021 
+
+# Today's Progress:
+
+`AM SESSION`
+Worked on CSS Key Frames, Transitions and Transforms
+
+CSS Variables Example
+
+    :root {
+        --primary-color: red;
+    }
+
+    body {
+        background: var(--primary-color);
+    }
+
+# Thoughts: 
+
+# Link to work: <br>
+
+# Resources: <br>
+
+----------------------------------------------------------
+
 
 ## LOG: #034
 
