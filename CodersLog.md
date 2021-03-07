@@ -36,9 +36,16 @@ CSS Variables Example
         background: var(--primary-color);
     }
 
+`PM SESSION`
+
+Started Slide-Show web project
+
 # Thoughts: 
 
+Not really into working on stuff, would rather hang out with my family.
+
 # Link to work: <br>
+[Slideshow Project](https://jameslusk.github.io/slideShow-proj/)
 
 # Resources: <br>
 
